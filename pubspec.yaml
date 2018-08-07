@@ -1,0 +1,13 @@
+name: deeply
+description: Update Map with keypath.
+version: 0.0.1
+author: Team netz.chat <dev@netzchat.com>
+homepage: https://github.com/netz-chat/deeply
+
+environment:
+    sdk: '>=2.0.0-dev.61.0 <3.0.0'
+
+
+
+dev_dependencies:
+  test: any
