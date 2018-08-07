@@ -12,7 +12,8 @@ dynamic deepUpdate(List keyPath, dynamic data, Function updater,
 
   data = new Map<dynamic, dynamic>.from(data);
 
-  data[keyPath[i]] = deepUpdate(keyPath, data[keyPath[i]], updater, ++i);
+  data[keyPath[i]] =
+      deepUpdate(keyPath, data[keyPath[i]], updater, ++i, notSetValue);
 
   return data;
 }
