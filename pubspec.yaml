@@ -1,6 +1,6 @@
 name: deeply
 description: Update nested maps with keyPath and callback.
-version: 0.0.6
+version: 0.0.7
 author: Team netz.chat <dev@netzchat.com>
 homepage: https://github.com/netz-chat/deeply
 
