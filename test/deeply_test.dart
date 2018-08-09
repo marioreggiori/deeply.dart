@@ -10,9 +10,9 @@ void main() {
       "config": "test",
     };
 
-    data = deepUpdate(["name", "first"], data, (name) => name += " Second");
-    data = deepUpdate(["birthday", "month"], data, (month) => ++month);
-    data = deepUpdate(["config", "active"], data, (_) => true);
+    data = updateDeeply(["name", "first"], data, (name) => name += " Second");
+    data = updateDeeply(["birthday", "month"], data, (month) => ++month);
+    data = updateDeeply(["config", "active"], data, (_) => true);
 
     expect(data, {
       "name": {"first": "First Second", "last": "Last"},
