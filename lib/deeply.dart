@@ -1,5 +1,6 @@
 library deeply;
 
+/// set at [keyPath] of [data] the value of [updater]-function with value of [data] at [keyPath] or [notSetValue] as argument
 dynamic updateDeeply(List keyPath, dynamic data, Function updater,
     [dynamic notSetValue, int i = 0]) {
   if (i == keyPath.length) {
@@ -18,6 +19,7 @@ dynamic updateDeeply(List keyPath, dynamic data, Function updater,
   return data;
 }
 
+/// remove element at [keyPath] in [data]
 dynamic removeDeeply(List keyPath, dynamic data, [int i = 0]) {
   if (data is Map) {
     if (!data.containsKey(keyPath[i])) {
@@ -36,6 +38,7 @@ dynamic removeDeeply(List keyPath, dynamic data, [int i = 0]) {
   return data;
 }
 
+/// rename [keyPath] in [data] to [newKey]
 dynamic renameDeeply(List keyPath, dynamic newKey, dynamic data, [int i = 0]) {
   if (data is Map) {
     if (!data.containsKey(keyPath[i])) {
