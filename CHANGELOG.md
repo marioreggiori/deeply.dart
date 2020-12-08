@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [1.1.0] - 2020-12-08
 
-* TODO: Describe initial release.
+* Update pubspec.yaml
