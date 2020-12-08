@@ -1,7 +1,7 @@
 library deeply;
 
 dynamic updateDeeply(List keyPath, dynamic data, Function updater,
-    [dynamic notSetValue = null, int i = 0]) {
+    [dynamic notSetValue, int i = 0]) {
   if (i == keyPath.length) {
     return updater(data == null ? notSetValue : data);
   }
@@ -10,7 +10,7 @@ dynamic updateDeeply(List keyPath, dynamic data, Function updater,
     data = {};
   }
 
-  data = new Map<dynamic, dynamic>.from(data);
+  data = Map<dynamic, dynamic>.from(data);
 
   data[keyPath[i]] =
       updateDeeply(keyPath, data[keyPath[i]], updater, notSetValue, ++i);
