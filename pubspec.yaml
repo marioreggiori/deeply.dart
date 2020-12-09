@@ -1,6 +1,6 @@
 name: deeply
-description: Update nested maps with keyPath and callback.
-version: 1.1.0
+description: Modify (update/unset/rename) deeply nested maps by using a keyPath-string to access sub-maps recursively
+version: 1.1.0+1
 homepage: https://github.com/fosscom/deeply
 
 environment:
