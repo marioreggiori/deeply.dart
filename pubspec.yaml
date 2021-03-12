@@ -1,7 +1,7 @@
 name: deeply
 description: Modify (update/unset/rename) deeply nested maps by using a keyPath-string to access sub-maps recursively
-version: 1.2.0
-homepage: https://github.com/marioreggiori/deeply
+version: 1.2.0+1
+homepage: https://github.com/marioreggiori/deeply.dart
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
