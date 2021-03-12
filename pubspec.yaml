@@ -1,13 +1,10 @@
 name: deeply
 description: Modify (update/unset/rename) deeply nested maps by using a keyPath-string to access sub-maps recursively
-version: 1.1.0+1
-homepage: https://github.com/fosscom/deeply
+version: 1.2.0
+homepage: https://github.com/marioreggiori/deeply
 
 environment:
-    sdk: '>=2.8.1 <3.0.0'
-
-
+  sdk: ">=2.12.0 <3.0.0"
 
 dev_dependencies:
   test: any
-  pedantic: ^1.9.0
